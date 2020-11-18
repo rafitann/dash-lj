@@ -59,8 +59,8 @@ const Dashboard = (props) => {
                         label: 'Lucro',
                         data: [data.entradaCaixa.entrada.janeiro, data.entradaCaixa.entrada.fevereiro, data.entradaCaixa.entrada.marco, data.entradaCaixa.entrada.abril, data.entradaCaixa.entrada.maio, data.entradaCaixa.entrada.junho, data.entradaCaixa.entrada.julho, data.entradaCaixa.entrada.agosto, data.entradaCaixa.entrada.setembro, data.entradaCaixa.entrada.outubro, data.entradaCaixa.entrada.novembro, data.entradaCaixa.entrada.dezembro],
                         fill: false,
-                        backgroundColor: '#86d0cb',
-                        borderColor: 'rgba(134,208,203,0.3)',
+                        backgroundColor: '#ffb854',
+                        borderColor: 'rgba(255,184,84,0.3)',
                     },
                 ],
             })
@@ -90,7 +90,7 @@ const Dashboard = (props) => {
                 ],
             })
             setDataInvestment({
-                labels: ['10k a 20k', '20k a 30k', '30k a 40k', '40k a 50k'],
+                labels: [data.faixaInvestimento.faixas[0].titulo, data.faixaInvestimento.faixas[1].titulo, data.faixaInvestimento.faixas[2].titulo, data.faixaInvestimento.faixas[3].titulo],
                 datasets: [
                     {
                         data: [data.faixaInvestimento.faixas[0].total, data.faixaInvestimento.faixas[1].total, data.faixaInvestimento.faixas[2].total, data.faixaInvestimento.faixas[3].total],
@@ -100,7 +100,7 @@ const Dashboard = (props) => {
                             '#FFB854',
                             '#DB5D79',
                         ],
-                        borderWidth: 1,
+                        borderWidth: 0,
                     },
                 ],
             })
@@ -123,7 +123,7 @@ const Dashboard = (props) => {
                             position: 'bottom',
 
                             labels: {
-                                padding: 50,
+                                padding: 25,
                                 usePointStyle:true,
                                 fontColor: '#585858'
                             }
